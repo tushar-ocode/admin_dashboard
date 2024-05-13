@@ -22,10 +22,10 @@
 	import HeadTitle from '../../../common/HeadTitle.svelte';
 
 	const FilterClothes = [
-		{ id: 1, name: 'T-shirts', link: '#' },
-		{ id: 2, name: 'Shirts', link: '#' },
-		{ id: 3, name: 'Jeans', link: '#' },
-		{ id: 4, name: 'Jackets', link: '#' }
+		{ id: 1, name: 'Enagagement Rings', link: '#' },
+		{ id: 2, name: 'Wedding Rings', link: '#' },
+		{ id: 3, name: 'Jwellery', link: '#' },
+		{ id: 4, name: 'Wedding Bands', link: '#' }
 	];
 	let activeTab = 1;
 </script>
@@ -43,14 +43,14 @@
 
 <HeadTitle title="Products" />
 
-<Breadcrumb title="Ecommerce" pagetitle="Products" />
+<Breadcrumb title="Products" pagetitle="Rings" />
 <Row>
 	<Col lg="3">
 		<Card>
 			<CardBody>
 				<CardTitle class="mb-4">Filter</CardTitle>
 				<div>
-					<h5 class="font-size-14 mb-3">Clothes</h5>
+					<h5 class="font-size-14 mb-3">Rings</h5>
 
 					<ul class="list-unstyled product-list">
 						{#each FilterClothes as cloth}
@@ -63,7 +63,7 @@
 						{/each}
 					</ul>
 				</div>
-				<div class="mt-4 pt-3">
+				<!-- <div class="mt-4 pt-3">
 					<h5 class="font-size-14 mb-4">Price</h5>
 
 					<RangeSlider
@@ -78,9 +78,9 @@
 						prefix="$"
 						float={true}
 					/>
-				</div>
+				</div> -->
 
-				<div class="mt-4 pt-3">
+				<!-- <div class="mt-4 pt-3">
 					<h5 class="font-size-14 mb-3">Discount</h5>
 					{#each data.discountData as discount}
 						<div class="form-check mt-2">
@@ -90,7 +90,7 @@
 							</Label>
 						</div>
 					{/each}
-				</div>
+				</div> -->
 
 				<div class="mt-4 pt-3">
 					<h5 class="font-size-14 mb-3">Customer Rating</h5>
@@ -129,7 +129,7 @@
 		<Row class="mb-3">
 			<Col xl="4" sm="6">
 				<div class="mt-2">
-					<h5>Clothes</h5>
+					<h5>Rings</h5>
 				</div>
 			</Col>
 			<Col lg="8" sm="6">
@@ -140,7 +140,7 @@
 							<i class="bx bx-search-alt search-icon" />
 						</div>
 					</div>
-					<Nav class="product-view-nav" pills>
+					<Nav class="product-view-nav" pills>	
 						<NavItem>
 							<NavLink on:click={() => (activeTab = 1)} active={activeTab == 1}>
 								<i class="bx bx-grid-alt align-middle" />
@@ -159,8 +159,8 @@
 			{#each data.productsData as product}
 				<Col xl="4" sm="6">
 					<Card>
-						<CardBody>
-							<Link href="#">
+						<CardBody>		
+							<Link href="/ecommerce/product-detail">
 								<div class="product-img position-relative">
 									{#if product.isOffer}
 										<div class="avatar-sm product-ribbon">

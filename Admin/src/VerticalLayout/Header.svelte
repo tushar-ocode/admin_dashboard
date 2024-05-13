@@ -14,7 +14,7 @@
 	import ProfileDropdown from '../common/ProfileDropdown.svelte';
 	import { OverlayScrollbars } from 'overlayscrollbars';
 
-	export let toggleRightBar;
+	// export let toggleRightBar;
 	const toggleSideBar = () => {
 		if (browser) {
 			document.body.classList.toggle('sidebar-enable');
@@ -78,13 +78,13 @@
 			</button>
 
 			<!-- App Search-->
-			<form class="app-search d-none d-lg-block">
+			<!-- <form class="app-search d-none d-lg-block">
 				<div class="position-relative">
 					<Input type="text" class="form-control" placeholder="Search..." />
 					<span class="bx bx-search-alt" />
 				</div>
-			</form>
-			<Dropdown class="dropdown-mega d-none d-lg-block ms-2">
+			</form> -->
+			<!-- <Dropdown class="dropdown-mega d-none d-lg-block ms-2">
 				<DropdownToggle color="" tag="a" class="btn header-item waves-effect">
 					<span key="t-megamenu">Mega Menu</span>
 					<i class="mdi mdi-chevron-down" />
@@ -94,7 +94,7 @@
 						<Col sm={8}>
 							<Row>
 								<Col sm={4}>
-									<h5 class="font-size-14" key="t-ui-components">UI Components</h5>
+									<h5 class="font-size-14" key="t-ui-components">UI Coomponents</h5>
 									<ul class="list-unstyled megamenu-list">
 										<li>
 											<Link href="javascript:void(0);" key="t-lightbox">Lightbox</Link>
@@ -208,15 +208,15 @@
 						</Col>
 					</Row>
 				</DropdownMenu>
-			</Dropdown>
+			</Dropdown> -->
 		</div>
 		<div class="d-flex">
-			<LanguageDropdown />
-			<WebAppsDropdown />
+			<!-- <LanguageDropdown /> -->
+			<!-- <WebAppsDropdown /> -->
 			<FullScreenDropdown />
-			<NotificationDropdown />
+			<!-- <NotificationDropdown /> -->
 			<ProfileDropdown />
-
+<!-- 
 			<Dropdown class="d-inline-block">
 				<button
 					type="button"
@@ -225,7 +225,7 @@
 				>
 					<i class="bx bx-cog bx-spin" />
 				</button>
-			</Dropdown>
+			</Dropdown> -->
 		</div>
 	</div>
 </header>

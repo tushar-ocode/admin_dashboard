@@ -3,9 +3,9 @@
 	import Breadcrumb from '../../../common/Breadcrumb.svelte';
 	import HeadTitle from '../../../common/HeadTitle.svelte';
 	import Link from 'svelte-link';
-	import img4 from '../../../assets/images/product/img-4.png';
-	import img6 from '../../../assets/images/product/img-6.png';
-	import img7 from '../../../assets/images/product/img-7.png';
+	import img4 from '../../../assets/images/product/img-4.jpg';
+	import img6 from '../../../assets/images/product/img-6.jpg';
+	import img7 from '../../../assets/images/product/img-7.jpg';
 	import img8 from '../../../assets/images/product/img-8.png';
 	import avatar2 from "../../../assets/images/users/avatar-2.jpg"
 	import avatar4 from "../../../assets/images/users/avatar-4.jpg"
@@ -15,7 +15,7 @@
 
 <HeadTitle title="Product Detail" />
 
-<Breadcrumb title="Ecommerce" pagetitle="Product Detail" />
+<Breadcrumb title="Products" pagetitle="Product Detail" />
 
 <Row>
 	<Col lg="12">
@@ -58,49 +58,59 @@
 											<Image src={img8} class="img-fluid mx-auto d-block rounded"/>
 										</TabPane>
 									</TabContent>
-									<div class="text-center">
+									<!-- <div class="text-center">
 										<Button type="button" color="primary" class="waves-effect waves-light mt-2 me-1">
 											<i class="bx bx-cart me-2"></i> Add to cart
 										</Button>
 										<Button type="button" color="success" class=" waves-effect mt-2 waves-light">
 											<i class="bx bx-shopping-bag me-2"></i>Buy now
 										</Button>
-									</div>
+									</div> -->
 								</Col>
 							</Row>
 						</div>
 					</Col>
 					<Col xl="6">
 						<div class="mt-4 mt-xl-3">
-							<Link href="#" class="text-primary">Headphone</Link>
-							<h4 class="mt-1 mb-3">Wireless Headphone (Black)</h4>
+							<Link href="#" class="text-primary">Enagagement Ring</Link>
+							<h4 class="mt-1 mb-3">Diamond Cut Ring (White Gold)</h4>
 
-							<p class="text-muted float-start me-3">
+							<!-- <p class="text-muted float-start me-3">
 								<span class="bx bxs-star text-warning"></span>
 								<span class="bx bxs-star text-warning"></span>
 								<span class="bx bxs-star text-warning"></span>
 								<span class="bx bxs-star text-warning"></span>
 								<span class="bx bxs-star"></span>
-							</p>
-							<p class="text-muted mb-4">( 152 Customers Review )</p>
+							</p> -->
+							<!-- <p class="text-muted mb-4">( 152 Customers Review )</p>
 
 							<h6 class="text-success text-uppercase">20 % Off</h6>
-							<h5 class="mb-4">Price : <span class="text-muted me-2"><del>$240 USD</del></span> <b>$225 USD</b></h5>
-							<p class="text-muted mb-4">To achieve this, it would be necessary to have uniform grammar pronunciation and more common words If several languages coalesce</p>
+							<h5 class="mb-4">Price : <span class="text-muted me-2"><del>$240 USD</del></span> <b>$225 USD</b></h5> -->
+							<p class="text-muted mb-4">Custom single shared prong eternity band with round 3.75mm 0.21ct lab-grown diamond stones in scallop shaped settings.</p>
 							<div class="row mb-3">
-								<div class="col-md-6">
+								<!-- <div class="col-md-6">
 									<div>
 										<p class="text-muted"><i class="bx bx-unlink font-size-16 align-middle text-primary me-1"></i> Wireless</p>
-										<p class="text-muted"><i class="bx bx-shape-triangle font-size-16 align-middle text-primary me-1"></i> Wireless Range : 10m</p>
-										<p class="text-muted"><i class="bx bx-battery font-size-16 align-middle text-primary me-1"></i> Battery life : 6hrs</p>
+										<p class="text-muted"><i class="bx bx-shape-triangle font-size-16 align-middle text-primary me-1"></i>Minimum Carat Weight: 0.57 ct. tw. DEW</p>
+										<p class="text-muted"><i class="bx bx-battery font-size-16 align-middle text-primary me-1"></i> Number of Accent Stones: 126</p>
 									</div>
-								</div>
+								</div> -->
 								<div class="col-md-6">
 									<div>
-										<p class="text-muted"><i class="bx bx-user-voice font-size-16 align-middle text-primary me-1"></i> Bass</p>
-										<p class="text-muted"><i class="bx bx-cog font-size-16 align-middle text-primary me-1"></i> Warranty : 1 Year</p>
+										<!-- <p class="text-muted"><i class="bx bx-unlink font-size-16 align-middle text-primary me-1"></i> TAGS</p> -->
+										<b><p class="text-muted">TAGS</p></b>
+										<!-- <p class="text-muted"><i class="bx bx-shape-triangle font-size-16 align-middle text-primary me-1"></i>Color - White, Metal - Yellow Gold, Shape - Round
+										</p> -->
+										<p class="text-muted">Color - White, Metal - Yellow Gold, Shape - Round
+										</p>
 									</div>
 								</div>
+								<!-- <div class="col-md-6">
+									<div>
+										<p class="text-muted"><i class="bx bx-user-voice font-size-16 align-middle text-primary me-1"></i> Bass</p>
+										<p class="text-muted"><i class="bx bx-cog font-size-16 align-middle text-primary me-1"></i> Average Band Width: 2.90 mm</p>
+									</div>
+								</div> -->
 							</div>
 
 							<div class="product-color">
@@ -126,7 +136,7 @@
 							</div>
 					</Col>
 				</Row>
-				<div class="mt-5">
+				<!-- <div class="mt-5">
 					<h5 class="mb-3">Specifications :</h5>
 
 					<div class="table-responsive">
@@ -155,8 +165,8 @@
 							</tbody>
 						</Table>
 					</div>
-				</div>
-				<div class="mt-5">
+				</div> -->
+				<!-- <div class="mt-5">
 					<h5>Reviews :</h5>
 
 					<div class="d-flex py-3 border-bottom">
@@ -240,13 +250,13 @@
 							<div class="text-muted font-size-12"><i class="far fa-calendar-alt text-primary me-1"></i> 05 Oct, 2019</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</CardBody>
 		</Card>
 	</Col>
 </Row>
 
-<Row class="mt-3">
+<!-- <Row class="mt-3">
 	<Col lg="12">
 		<div>
 			<h5 class="mb-3">Recent product :</h5>
@@ -326,7 +336,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- end row -->
-		</div>
+			 end row -->
+		<!-- </div>
 	</Col>
-</Row>
+</Row> --> 

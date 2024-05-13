@@ -5,8 +5,8 @@
 	import HeadTitle from '../../../common/HeadTitle.svelte';
 	import Link from 'svelte-link';
 	import Modal from '../../../common/Modal.svelte';
-	import img7 from '../../../assets/images/product/img-7.png';
-	import img4 from '../../../assets/images/product/img-4.png';
+	import img7 from '../../../assets/images/product/img-7.jpg';
+	import img4 from '../../../assets/images/product/img-4.jpg';
 
 	let show = false;
 	const toggleOrderModal = () => {
@@ -26,7 +26,7 @@
 
 <HeadTitle title="Orders" />
 
-<Breadcrumb title="Ecommerce" pagetitle="Orders" />
+<Breadcrumb title="Products" pagetitle="Categories" />
 
 <Row>
 	<div class="col-12">
@@ -49,7 +49,7 @@
 								class="btn-rounded waves-effect waves-light mb-2 me-2"
 								on:click={toggleFormModal}
 							>
-								<i class="mdi mdi-plus me-1" /> Add New Order
+								<i class="mdi mdi-plus me-1" /> Add Category
 							</Button>
 						</div>
 					</Col><!-- end col-->
@@ -65,7 +65,7 @@
 										<label class="form-check-label" for="checkAll" />
 									</div>
 								</th>
-								<th class="align-middle">Order ID</th>
+								<th class="align-middle">Name</th>
 								<th class="align-middle">Billing Name</th>
 								<th class="align-middle">Date</th>
 								<th class="align-middle">Total</th>
@@ -232,7 +232,7 @@
 <Modal isOpen={isshowForm} className="modal-dialog-centered">
 	<div class="modal-content">
 		<div class="modal-header">
-			<h5 class="modal-title">Add New Order
+			<h5 class="modal-title">Add Category
 			</h5>
 			<Button type="button" color="" class="btn-close" on:click={toggleFormModal} />
 		</div>
@@ -242,11 +242,11 @@
 					<Col lg="12">
 						<input type="hidden" class="form-control" id="orderid-input">
 						<div class="mb-3">
-							<label for="customername-field" class="form-label">Customer Name</label>
+							<label for="customername-field" class="form-label">Name</label>
 							<input type="text" id="customername-field" class="form-control" placeholder="Enter name" required />
-							<div class="invalid-feedback">Please enter a name.</div>
+							<div class="invalid-feedback">Please enter name.</div>
 						</div>
-						<div class="mb-3">
+						<!-- <div class="mb-3">
 							<label for="orderdate-input" class="form-label">Order Date</label>
 							<input type="text" id="orderdate-input" class="form-control" placeholder="Enter order date" data-date-format="dd M, yyyy" data-provide="datepicker" data-date-autoclose="true" required />
 							<div class="invalid-feedback">Please select a date.</div>
@@ -255,9 +255,9 @@
 							<label for="payamount-input" class="form-label">Amount</label>
 							<input type="text" id="payamount-input" class="form-control" placeholder="Enter amount" required />
 							<div class="invalid-feedback">Please enter amount.</div>
-						</div>
+						</div> -->
 					</Col>
-					<Col lg="6">
+					<!-- <Col lg="6">
 						<div class="mb-3">
 							<label for="paystatus-input" class="form-label">Payment Status</label>
 							<select class="form-select" id="paystatus-input" required>
@@ -279,7 +279,7 @@
 							</select>
 							<div class="invalid-feedback">Please select a payment method.</div>
 						</div>
-					</Col>
+					</Col> -->
 					<Col lg="12">
 						<div class="text-end">
 							<Button type="button" outline  color="secondary" on:click={toggleFormModal}>Cancel</Button>

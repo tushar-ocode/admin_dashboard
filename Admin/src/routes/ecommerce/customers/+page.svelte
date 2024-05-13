@@ -19,7 +19,7 @@
 
 <HeadTitle title="Customers" />
 
-<Breadcrumb title="Ecommerce" pagetitle="Customers" />
+<Breadcrumb title="Products" pagetitle="User" />
 
 <Row>
 	<div class="col-12">
@@ -42,7 +42,7 @@
 								class="btn-rounded waves-effect waves-light mb-2 me-2"
 								on:click={toggleFormModal}
 							>
-								<i class="mdi mdi-plus me-1" /> New Customers
+								<i class="mdi mdi-plus me-1" /> Invite User
 							</Button>
 						</div>
 					</Col><!-- end col-->
@@ -152,7 +152,7 @@
 <Modal isOpen={isshowForm} className="modal-dialog-centered">
 	<div class="modal-content">
 		<div class="modal-header">
-			<h5 class="modal-title">Add Customer
+			<h5 class="modal-title">Invite User
 			</h5>
 			<Button type="button" color="" class="btn-close" on:click={toggleFormModal} />
 		</div>
@@ -162,24 +162,14 @@
 					<div class="col-lg-12">
 						<input type="hidden" class="form-control" id="userid-input">
 						<div class="mb-3">
-							<label for="username-input" class="form-label">Customer Name</label>
-							<input type="text" id="username-input" class="form-control" placeholder="Enter name" required />
-							<div class="invalid-feedback">Please enter a name.</div>
-						</div>
-						<div class="mb-3">
 							<label for="email-input" class="form-label">Email</label>
 							<input type="email" id="email-input" class="form-control" placeholder="Enter email" required />
 							<div class="invalid-feedback">Please enter email.</div>
 						</div>
 						<div class="mb-3">
-							<label for="phone-input" class="form-label">Phone</label>
-							<input type="text" id="phone-input" class="form-control" placeholder="Enter Phone" required />
-							<div class="invalid-feedback">Please enter amount.</div>
-						</div>
-						<div class="mb-3">
-							<label for="joindate-input" class="form-label">Join Date</label>
-							<input type="text" id="joindate-input" class="form-control" placeholder="Select join date" data-date-format="dd M, yyyy" data-provide="datepicker" data-date-autoclose="true" required />
-							<div class="invalid-feedback">Please select a join date.</div>
+							<label for="joindate-input" class="form-label">Role</label>
+							<input type="text" id="joindate-input" class="form-control" placeholder="Please select a role." required />
+							<div class="invalid-feedback">Please select a role.</div>
 						</div>
 					</div>
 					

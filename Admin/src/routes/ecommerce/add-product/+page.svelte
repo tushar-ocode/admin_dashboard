@@ -14,6 +14,7 @@
 	import Breadcrumb from '../../../common/Breadcrumb.svelte';
 	import HeadTitle from '../../../common/HeadTitle.svelte';
 	import Select from 'svelte-select';
+	
 	// import Dropzone from 'svelte-file-dropzone/Dropzone.svelte';
 
 	let files = {
@@ -50,37 +51,44 @@
 	}
 
 	const options = [
-		{ value: 'WI', label: 'Wireless' },
-		{ value: 'BE', label: 'Battery life' },
-		{ value: 'BA', label: 'Bass' }
+		{ value: 'Select', label: 'Select' },
+		{ value: 'BR', label: 'Boutique Ready' },
+		{ value: 'B12', label: 'Brand - 1215' },
+		{ value: 'BN', label: 'Brand - Blue Nile' },
+		{ value: 'BE', label: 'Brand - Brilliant Earth' },
+		{ value: 'DY', label: 'Brand - David Yurman' },
+		{ value: 'DN', label: 'Brand - Diamond Nexus' }
 	];
 
 	const itemscategory = [
 		{ value: 'Select', label: 'Select' },
-		{ value: 'FA', label: 'Fashion' },
-		{ value: 'EL', label: 'Electronic' }
+		{ value: 'FA', label: 'Brooch' },
+		{ value: 'FA', label: 'Bracelet' },
+		{ value: 'FA', label: 'Earrings' },
+		{ value: 'FA', label: 'Enagagement Halo' },
+		{ value: 'EL', label: 'Enagagement Pave' }
 	];
 </script>
 
 <HeadTitle title="Add Product" />
 
-<Breadcrumb title="Ecommerce" pagetitle="Add Product" />
+<Breadcrumb title="Products" pagetitle="Add Ring" />
 
 <Row>
 	<Col xs="12">
 		<Card>
 			<CardBody>
-				<CardTitle class="h4">Basic Information</CardTitle>
-				<p class="card-title-desc">Fill all information below</p>
+				<!-- <CardTitle class="h4">Basic Information</CardTitle> -->
+				<!-- <p class="card-title-desc">Fill all information below</p> -->
 
 				<Form>
 					<Row>
 						<Col sm="6">
 							<FormGroup class="mb-3">
-								<Label for="productname">Product Name</Label>
-								<Input id="productname" name="productname" type="text" class="form-control" />
+								<Label for="productname">Name</Label>
+								<Input id="productname" placeholder="Ring name.." name="productname" type="text" class="form-control" />
 							</FormGroup>
-							<FormGroup class="mb-3">
+							<!-- <FormGroup class="mb-3">
 								<Label for="manufacturername">Manufacturer Name</Label>
 								<Input
 									id="manufacturername"
@@ -88,8 +96,8 @@
 									type="text"
 									class="form-control"
 								/>
-							</FormGroup>
-							<FormGroup class="mb-3">
+							</FormGroup> -->
+							<!-- <FormGroup class="mb-3">
 								<Label for="manufacturerbrand">Manufacturer Brand</Label>
 								<Input
 									id="manufacturerbrand"
@@ -101,7 +109,7 @@
 							<FormGroup class="mb-3">
 								<Label for="price">Price</Label>
 								<Input id="price" name="price" type="text" class="form-control" />
-							</FormGroup>
+							</FormGroup> -->
 						</Col>
 
 						<Col sm="6">
@@ -110,8 +118,8 @@
 								<Select items={itemscategory} />
 							</FormGroup>
 							<FormGroup class="select2-container mb-3">
-								<Label class="control-label">Features</Label>
-								<Select placeholder="Choose ..." title="features" items={options} isMulti={true} />
+								<Label class="control-label">Tags</Label>
+								<Select placeholder="Choose Tags ..." title="features" items={options} isMulti={true} />
 							</FormGroup>
 							<FormGroup class="mb-3">
 								<Label for="productdesc">Product Description</Label>
@@ -170,12 +178,12 @@
 			</CardBody>
 		</Card>
 
-		<Card>
-			<CardBody>
-				<CardTitle class="h4">Meta Data</CardTitle>
-				<p class="card-title-desc">Fill all information below</p>
+		<!-- <Card>
+			<CardBody> -->
+				<!-- <CardTitle class="h4">Meta Data</CardTitle>
+				<p class="card-title-desc">Fill all information below</p> -->
 
-				<Form>
+				<!-- <Form>
 					<Row>
 						<Col sm={6}>
 							<div class="mb-3">
@@ -202,8 +210,8 @@
 						</Button>{' '}
 						<Button type="submit" color="secondary" class="waves-effect waves-light">Cancel</Button>
 					</div>
-				</Form>
-			</CardBody>
-		</Card>
+				</Form> -->
+			<!-- </CardBody>
+		</Card> -->
 	</Col>
 </Row>

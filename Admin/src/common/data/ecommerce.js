@@ -1,17 +1,17 @@
-import img1 from "../../assets/images/product/img-1.png"
-import img2 from "../../assets/images/product/img-2.png"
-import img3 from "../../assets/images/product/img-3.png"
-import img4 from "../../assets/images/product/img-4.png"
-import img5 from "../../assets/images/product/img-5.png"
-import img6 from "../../assets/images/product/img-6.png"
+import img1 from "../../assets/images/product/img-1.jpg"
+import img2 from "../../assets/images/product/img-2.jpg"
+import img3 from "../../assets/images/product/img-3.jpg"
+import img4 from "../../assets/images/product/img-4.jpg"
+import img5 from "../../assets/images/product/img-5.jpg"
+import img6 from "../../assets/images/product/img-6.jpg"
 
 const productsData = [
     {
       id: 1,
       image: img1,
-      name: "Half sleeve T-shirt",
+      name: "Diamond Cut Ring",
       link: "#",
-      category: "T-shirts",
+      category: "Engagement ring",
       rating: 5.1,
       oldPrice: 500,
       newPrice: 405,
@@ -20,10 +20,10 @@ const productsData = [
       reviews: 0,
     //   subImage: [img1, "assets/images/product/Pro-1a.png" , "assets/images/product/Pro-1b.png" ],
       specification: [
-        { type: "Category", value: "T-shirt" },
-        { type: "Brand", value: "Levis" },
+        { type: "Category", value: "Engagement ring" },
+        { type: "Brand", value: "Diamond nexus" },
         { type: "Size", value: "M" },
-        { type: "Color", value: "Red" },
+        { type: "Color", value: "White gold" },
       ],
   
       features: [
@@ -48,9 +48,9 @@ const productsData = [
     {
       id: 2,
       image: img2,
-      name: "Black color T-shirt",
+      name: "Hidden Oval Cut Engagement Ring",
       link: "#",
-      category: "T-shirts",
+      category: "Engagement Ring",
       rating: 4.3,
       oldPrice: 225,
       newPrice: 175,
@@ -58,8 +58,8 @@ const productsData = [
       reviews: 0,
     //   subImage: ["assets/images/product/img-2.png", "assets/images/product/Pro-2a.png", "assets/images/product/Pro-2b.png"],
       specification: [
-        { type: "Category", value: "T-shirt" },
-        { type: "Brand", value: "Levis" },
+        { type: "Category", value: "Engagement ring" },
+        { type: "Brand", value: "Diamond nexus" },
         { type: "Size", value: "L" },
         { type: "Color", value: "Light blue" },
       ],
@@ -85,9 +85,9 @@ const productsData = [
     {
       id: 3,
       image: img3,
-      name: "Printed T-shirt",
+      name: "Novara Oval Cut Engagement Ring",
       link: "#",
-      category: "T-shirts",
+      category: "Engagement Ring",
       rating: 3.5,
       oldPrice: 177,
       newPrice: 152,
@@ -96,8 +96,8 @@ const productsData = [
       reviews: 0,
     //   subImage: ["assets/images/product/img-3.png", "assets/images/product/Pro-4.png", "assets/images/product/Pro-4a.png"],
       specification: [
-        { type: "Category", value: "T-shirt" },
-        { type: "Brand", value: "Levis" },
+        { type: "Category", value: "Engagement ring" },
+        { type: "Brand", value: "Diamond nexus" },
         { type: "Size", value: "XL" },
         { type: "Color", value: "Black" },
       ],
@@ -120,12 +120,12 @@ const productsData = [
     //     { image: "product10", color: "White" },
     //   ],
     },
-    {
+    { 
       id: 4,
       image: img4,
-      name: "Smiley Plain T-shirt",
+      name: "Reign Oval Cut Engagement Ring",
       link: "#",
-      category: "Hoodies",
+      category: "Engagement Ring",
       rating: 3.1,
       oldPrice: 150,
       newPrice: 145,
@@ -134,8 +134,8 @@ const productsData = [
       reviews: 0,
     //   subImage: ["assets/images/product/img-4.png", "assets/images/product/Pro-12a.png", "assets/images/product/Pro-12b.png"],
       specification: [
-        { type: "Category", value: "T-shirt" },
-        { type: "Brand", value: "Levis" },
+        { type: "Category", value: "Engagement ring" },
+        { type: "Brand", value: "Diamond nexus" },
         { type: "Size", value: "M" },
         { type: "Color", value: "Blue" },
       ],
@@ -161,7 +161,7 @@ const productsData = [
     {
       id: 5,
       image: img5,
-      name: "Full sleeve T-Shirt",
+      name: "Seine Oval Cut Engagement Ring",
       link: "#",
       category: "T-shirts",
       rating: "5.0",
@@ -197,7 +197,7 @@ const productsData = [
     {
       id: 6,
       image: img6,
-      name: "Sky blue color T-shirt",
+      name: "Seine Round Cut Engagement Ring",
       link: "#",
       category: "T-shirts",
       rating: 1,
@@ -208,8 +208,8 @@ const productsData = [
       reviews: 10,
     //   subImage: ["assets/images/product/img-6.png", "assets/images/product/Pro-17.png", "assets/images/product/Pro-17a.png"],
       specification: [
-        { type: "Category", value: "T-shirt" },
-        { type: "Brand", value: "Levis" },
+        { type: "Category", value: "Engagement ring" },
+        { type: "Brand", value: "Diamond nexus" },
         { type: "Size", value: "L" },
         { type: "Color", value: "Green" },
       ],

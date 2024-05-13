@@ -89,6 +89,8 @@
 		if (browser) {
 			document.querySelectorAll('.vertical-menu .has-arrow').forEach((menu) => {
 				menu.addEventListener('click', () => {
+
+					console.log(menu.classList[2])
 					if (menu.classList[2] !== undefined) {
 						if (menu.classList[2].includes('mm-active')) {
 							menu.nextElementSibling.classList.add('mm-collapse');
@@ -100,8 +102,10 @@
 								menu.nextElementSibling.classList.remove('mm-collapse');
 								menu.nextElementSibling.classList.add('mm-show');
 							}
+							
 						}
 					} else {
+						console.log('here in the code')
 						menu.classList.add('mm-active');
 						if (menu.nextElementSibling) {
 							menu.nextElementSibling.classList.remove('mm-collapse');
@@ -113,11 +117,12 @@
 
 			document.querySelectorAll('.sub-menu a').forEach((submenu) => {
 				submenu.addEventListener('click', () => {
-					removeActiveDropdown();
+					// removeActiveDropdown();
+					console.log(submenu.classList);
 					submenu.classList.add('active');
 					if (submenu.nextElementSibling) {
 						submenu.nextElementSibling.classList.add('mm-show');
-					}
+					}	
 					if (submenu.parentElement) {
 						submenu.parentElement.classList.add('mm-active');
 						const parent1 = submenu.parentElement.parentElement;
@@ -166,14 +171,17 @@
 	const menuItemScroll = () => {
 		if (browser) {
 			let currUrl = $page.url.pathname;
-			let item = document.querySelector(".vertical-menu a[href='" + currUrl + "']").offsetTop;
-			if (item > 300) {
-				item = item - 300;
-				const menuElement = document.getElementById('vertical-menu');
-				menuElement.scrollTo({
-					top: item,
-					behavior: 'smooth'
-				});
+			let item = document.querySelector(".vertical-menu a[href='" + currUrl + "']");
+			if (item) {
+				item = item.offsetTop;
+				if (item > 300) {
+					item = item - 300;
+					const menuElement = document.getElementById('vertical-menu');
+					menuElement.scrollTo({
+						top: item,
+						behavior: 'smooth'
+					});
+				}
 			}
 		}
 	};

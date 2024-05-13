@@ -2,8 +2,8 @@
 	import Link from "svelte-link";
 	import { Button, Card, CardBody, CardTitle, Col, ModalBody, ModalFooter, ModalHeader, Table } from "sveltestrap";
     import Modal from "../../common/Modal.svelte"
-    import img7 from "../../assets/images/product/img-7.png"
-    import img4 from "../../assets/images/product/img-4.png"
+    import img7 from "../../assets/images/product/img-7.jpg"
+    import img4 from "../../assets/images/product/img-4.jpg"
     let open = false
 
     const toggleModal = () => {

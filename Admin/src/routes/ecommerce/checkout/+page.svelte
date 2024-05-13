@@ -21,8 +21,8 @@
 	import HeadTitle from '../../../common/HeadTitle.svelte';
 	import Link from 'svelte-link';
 	import Select from 'svelte-select';
-	import img1 from "../../../assets/images/product/img-1.png"
-	import img7 from "../../../assets/images/product/img-7.png"
+	import img1 from "../../../assets/images/product/img-1.jpg"
+	import img7 from "../../../assets/images/product/img-7.jpg"
 
 	let activeTab = '1';
 

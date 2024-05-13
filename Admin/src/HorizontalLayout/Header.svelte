@@ -39,23 +39,23 @@
 			</div>
 
 			<!-- App Search-->
-			<form class="app-search d-none d-lg-block">
+			<!-- <form class="app-search d-none d-lg-block">
 				<div class="position-relative">
 					<Input type="text" class="form-control" placeholder="Search..." />
 					<span class="bx bx-search-alt" />
 				</div>
-			</form>
+			</form> -->
 			<Dropdown class="dropdown-mega d-none d-lg-block ms-2">
-				<DropdownToggle color="" tag="a" class="btn header-item waves-effect">
+				<!-- <DropdownToggle color="" tag="a" class="btn header-item waves-effect">
 					<span key="t-megamenu">Mega Menu</span>
 					<i class="mdi mdi-chevron-down" />
-				</DropdownToggle>
+				</DropdownToggle> -->
 				<DropdownMenu class="dropdown-megamenu">
 					<Row>
 						<Col sm={8}>
 							<Row>
 								<Col sm={4}>
-									<h5 class="font-size-14" key="t-ui-components">UI Components</h5>
+									<h5 class="font-size-14" key="t-ui-components">UI Coomponents</h5>
 									<ul class="list-unstyled megamenu-list">
 										<li>
 											<Link href="javascript:void(0);" key="t-lightbox">Lightbox</Link>
