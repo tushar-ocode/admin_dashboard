@@ -23,17 +23,7 @@
 	let password = '123456';
 	let isOpen = false;
 	let msg = '';
-	let status = '';
-
-	// onMount(() => {
-	// 	if(!localStorage.getItem('reload')){
-	// 		localStorage.setItem("reload", "reloaded");
-	// 		const thisPage = window.location.pathname;
-	// 		console.log('goto ' + thisPage);
-	// 		goto(thisPage);
-	// 		}
-	// });
-	
+	let status = '';	
 
 	async function onSubmit(e) {
 		e.preventDefault();
