@@ -3,7 +3,7 @@
 
 	import Breadcrumb from './../../../common/Breadcrumb.svelte';
 	import HeadTitle from '../../../common/HeadTitle.svelte';
-	import Dropzone from 'svelte-file-dropzone/Dropzone.svelte';
+	// import Dropzone from 'svelte-file-dropzone/Dropzone.svelte';
 
 	let files = {
 		accepted: [],
@@ -52,7 +52,7 @@
 					DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews.
 				</p>
 				<Form>
-					<Dropzone on:drop={handleFilesSelect}>
+					<!-- <Dropzone on:drop={handleFilesSelect}>
 						<div>
 							<div class="dz-message needsclick">
 								<div class="dz-message needsclick">
@@ -63,7 +63,7 @@
 								</div>
 							</div>
 						</div>
-					</Dropzone>
+					</Dropzone> -->
 					<ul class="list-unstyled mb-0" id="dropzone-preview">
                         {#each files.accepted as item,index}
                         <li class="mt-2" id="dropzone-preview-list">

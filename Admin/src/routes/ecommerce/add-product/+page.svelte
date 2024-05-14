@@ -147,11 +147,11 @@
 							<h4>Drop files here or click to upload.</h4>
 						</div>
 				</Dropzone> -->
-				<ul class="list-unstyled mb-0" id="dropzone-preview">
+				<!-- <ul class="list-unstyled mb-0" id="dropzone-preview">
 					{#each files.accepted as item,index}
 					<li class="mt-2" id="dropzone-preview-list">
-						<!-- This is used as the file preview template -->
-						<div class="border rounded">
+						<!-This is used as the file preview template -->
+						<!-- <div class="border rounded">
 							<div class="d-flex p-2">
 								<div class="flex-shrink-0 me-3">
 									<div class="avatar-sm bg-light rounded">
@@ -174,7 +174,7 @@
 						</div>
 					</li>
 					{/each}
-				</ul>
+				</ul>  -->
 			</CardBody>
 		</Card>
 
