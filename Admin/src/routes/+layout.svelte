@@ -4,7 +4,7 @@
 	import { browser } from '$app/environment';
 	import { goto } from '$app/navigation';
 	import VerticalLayout from '../VerticalLayout/Index.svelte';
-	import HorizontalLayout from '../HorizontalLayout/Index.svelte';
+	// import HorizontalLayout from '../HorizontalLayout/Index.svelte';
 	import { addMessages, init, getLocaleFromNavigator } from 'svelte-i18n';
 	import en from '../lang/en.json';
 
@@ -32,7 +32,7 @@
 		}
 	}
 
-	let component = layoutType == 'vertical' ? VerticalLayout : HorizontalLayout;
+	let component = layoutType == 'vertical' ? VerticalLayout : VerticalLayout;
 
 	const publicRoutes = [
 		'/crypto/ico-landing',

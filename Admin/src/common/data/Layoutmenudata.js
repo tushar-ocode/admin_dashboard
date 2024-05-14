@@ -7,13 +7,14 @@ const Navdata = [
   {
     "icon": "bx bx-home-circle",
     "label": "Dashboards",
-    "subMenu": [
-      { "link": "/dashboard", "label": "Default" },
-      // { "link": "/dashboard-saas", "label": "Saas" },
-      // { "link": "/dashboard-crypto", "label": "Crypto" },
-      // { "link": "/dashboard-blog", "label": "Blog" },
-      // { "link": "/dashboard-jobs", "label": "Jobs" }
-    ]
+    "link": "/dashboard"
+    // "subMenu": [
+    //   { "link": "/dashboard", "label": "Default" },
+    //   // { "link": "/dashboard-saas", "label": "Saas" },
+    //   // { "link": "/dashboard-crypto", "label": "Crypto" },
+    //   // { "link": "/dashboard-blog", "label": "Blog" },
+    //   // { "link": "/dashboard-jobs", "label": "Jobs" }
+    // ]
   },
   // {
   //   label: 'Apps',
@@ -36,21 +37,44 @@ const Navdata = [
   //   "label": "File Manager",
   //   "link": "/filemanager"
   // },
+  // {
+  //   "icon": "bx bx-store",
+  //   "label": "Products",
+  //   "link": "/ecommerce/products"
+  //   // "subMenu": [
+  //   //   { "link": "/ecommerce/products", "label": "Rings" },
+  //   //   { "link": "/ecommerce/product-detail", "label": "Product Detail" },
+  //   //   { "link": "/ecommerce/orders", "label": "Category" },
+  //   //   { "link": "/ecommerce/customers", "label": "Users" },
+  //   //   { "link": "/ecommerce/tags", "label": "Tags" },
+  //   //   // { "link": "/ecommerce/cart", "label": "Cart" },
+  //   //   // { "link": "/ecommerce/checkout", "label": "Checkout" },
+  //   //   // { "link": "/ecommerce/shops", "label": "Shops" },
+  //   //   { "link": "/ecommerce/add-product", "label": "Add Product" }
+  //   // ]
+  // },
+
   {
-    "icon": "bx bx-store",
-    "label": "Products",
-    "subMenu": [
-      { "link": "/ecommerce/products", "label": "Rings" },
-      { "link": "/ecommerce/product-detail", "label": "Product Detail" },
-      { "link": "/ecommerce/orders", "label": "Category" },
-      { "link": "/ecommerce/customers", "label": "Users" },
-      { "link": "/ecommerce/tags", "label": "Tags" },
-      // { "link": "/ecommerce/cart", "label": "Cart" },
-      // { "link": "/ecommerce/checkout", "label": "Checkout" },
-      // { "link": "/ecommerce/shops", "label": "Shops" },
-      { "link": "/ecommerce/add-product", "label": "Add Product" }
-    ]
+    "icon": "fas fa-ring",
+    "label": "Rings",
+    "link": "/ecommerce/products"
   },
+  {
+    "icon": "fas fa-user-friends",
+    "label": "Users",
+    "link": "/contacts/list"
+  },
+  {
+    "icon": "far fa-list-alt",
+    "label": "Category",
+    "link": "/jobs/list"
+  },
+  {
+    "icon": "bx bx-tag",
+    "label": "Tags",
+    "link": "/jobs/list"
+  },
+
   // {
   //   "icon": "bx bx-bitcoin",
   //   "label": "Crypto",

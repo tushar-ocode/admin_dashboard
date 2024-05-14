@@ -24,6 +24,17 @@
 	let isOpen = false;
 	let msg = '';
 	let status = '';
+
+	// onMount(() => {
+	// 	if(!localStorage.getItem('reload')){
+	// 		localStorage.setItem("reload", "reloaded");
+	// 		const thisPage = window.location.pathname;
+	// 		console.log('goto ' + thisPage);
+	// 		goto(thisPage);
+	// 		}
+	// });
+	
+
 	async function onSubmit(e) {
 		e.preventDefault();
 		try {
