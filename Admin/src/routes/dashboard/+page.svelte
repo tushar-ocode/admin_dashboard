@@ -40,7 +40,7 @@
 
 <HeadTitle title="Dashboard" />
 
-<Breadcrumb title="Dashboards" pagetitle="Dashboard" />
+<Breadcrumb title="Forever Artisans" pagetitle="Dashboard" />
 
 <Row>
 	<Col xl={4}>
@@ -50,7 +50,7 @@
 					<Col xs={7}>
 						<div class="text-primary p-3">
 							<h5 class="text-primary">Welcome Back !</h5>
-							<p>Skote Dashboard</p>
+							<p>Forever Artisans Dashboard</p>
 						</div>
 					</Col>
 					<Col xs={5} class="align-self-end">
@@ -209,7 +209,7 @@
 	<LatestTransaction />
 </Row>
 
-<Modal isOpen={subscribemodal} on:click={togglesubscribemodal} className='modal-dialog-centered'>
+<!-- <Modal isOpen={subscribemodal} on:click={togglesubscribemodal} className='modal-dialog-centered'>
 	<div class="modal-content">
 		<div class="modal-header border-bottom-0">
 			<button
@@ -248,4 +248,4 @@
 			</div>
 		</div>
 	</div>
-</Modal>
+</Modal> -->

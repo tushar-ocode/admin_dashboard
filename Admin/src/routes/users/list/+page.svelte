@@ -1,4 +1,5 @@
 <script>
+	// import { USER } from './../../../../.svelte-kit/ambient.d.ts';
 	import {
 		Button,
 		Card,
@@ -29,9 +30,9 @@
 	};
 </script>
 
-<HeadTitle title="Contacts Users List" />
+<HeadTitle title="Users List" />
 
-<Breadcrumb title="Contacts" pagetitle="Users List" />
+<Breadcrumb title="Forever Artisans" pagetitle="Users List" />
 
 <Row>
 	<Col lg="12">
@@ -57,7 +58,7 @@
 								type="button"
 								color="success"
 								class="btn-rounded waves-effect waves-light mb-2"
-								on:click={toggleModal}><i class="mdi mdi-plus me-1" /> New Contact</Button
+								on:click={toggleModal}><i class="mdi mdi-plus me-1" /> Invite User</Button
 							>
 						</div>
 					</Col>
@@ -70,8 +71,7 @@
 								<th scope="col" style="width: 70px;">#</th>
 								<th scope="col">Name</th>
 								<th scope="col">Email</th>
-								<th scope="col">Tags</th>
-								<th scope="col">Projects</th>
+								<th scope="col">Permission</th>
 								<th scope="col">Action</th>
 							</tr>
 						</thead>
@@ -98,7 +98,7 @@
 										<p class="text-muted mb-0">{user.designation}</p>
 									</td>
 									<td>{user.email}</td>
-									<td>
+									<!-- <td>
 										<div>
 											{#each user.tags as tag, index}
 												{#if index < 2}
@@ -114,7 +114,7 @@
 												</Link>
 											{/if}
 										</div>
-									</td>
+									</td> -->
 									<td> {user.projects} </td>
 									<td>
 										<ul class="list-inline font-size-20 contact-links mb-0">
@@ -156,7 +156,7 @@
 <Modal isOpen={ishowModal} className="modal-dialog-centered">
 	<div class="modal-content">
 		<div class="modal-header">
-			<h5 class="modal-title" id="newContactModalLabel">Add Contact</h5>
+			<h5 class="modal-title" id="newContactModalLabel">Invite User</h5>
 			<Button
 				type="button"
 				class="btn-close"
@@ -211,28 +211,6 @@
 							</div>
 						</div>
 						<div class="mb-3">
-							<label for="username-input" class="form-label">User Name</label>
-							<Input
-								type="text"
-								id="username-input"
-								class="form-control"
-								placeholder="Enter name"
-								required=""
-							/>
-							<div class="invalid-feedback">Please enter a name.</div>
-						</div>
-						<div class="mb-3">
-							<label for="designation-input" class="form-label">Designation</label>
-							<Input
-								type="text"
-								id="designation-input"
-								class="form-control"
-								placeholder="Enter Designation"
-								required=""
-							/>
-							<div class="invalid-feedback">Please enter a designation.</div>
-						</div>
-						<div class="mb-3">
 							<label for="email-input" class="form-label">Email</label>
 							<Input
 								type="email"
@@ -244,20 +222,14 @@
 							<div class="invalid-feedback">Please enter email.</div>
 						</div>
 						<div class="mb-3">
-							<label for="tag-input" class="form-label">Tags</label>
+							<label for="tag-input" class="form-label">Role</label>
 							<select
 								class="select2 form-control select2-multiple select2-hidden-accessible"
 								id="tag-input"
 							>
-								<option value="Photoshop">Photoshop</option>
-								<option value="illustrator">illustrator</option>
-								<option value="Html">Html</option>
-								<option value="Css">Css</option>
-								<option value="Javascript">Javascript</option>
-								<option value="Php">Php</option>
-								<option value="Java">Java</option>
-								<option value="Ruby">Ruby</option>
-								<option value="Python">Python</option>
+								<option value="Photoshop">Select</option>
+								<option value="illustrator">Employee</option>
+								<option value="Html">Administrator</option>
 							</select>
 						</div>
 					</Col>
@@ -265,7 +237,7 @@
 					<Col lg="12">
 						<div class="text-end">
 							<Button type="button" color="secondary" outline on:click={toggleModal}>Cancel</Button>
-							<Button type="submit" color="success" id="addContact-btn">add</Button>
+							<Button type="submit" color="success" id="addContact-btn">Send</Button>
 						</div>
 					</Col>
 				</Row>

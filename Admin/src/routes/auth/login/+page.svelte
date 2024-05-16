@@ -15,7 +15,7 @@
 	import Headtitle from '../../../common/HeadTitle.svelte';
 	import profileImg from '../../../assets/images/profile-img.png';
 	import logolight from '../../../assets/images/logo-light.svg';
-	import logo from '../../../assets/images/logo.svg';
+	import logo from '../../../assets/images/logo-light.svg';
 
 	import { goto } from '$app/navigation';
 
@@ -70,7 +70,7 @@
 							<Col class="col-7">
 								<div class="text-primary p-4">
 									<h5 class="text-primary">Welcome Back !</h5>
-									<p>Sign in to continue to Skote.</p>
+									<p>Sign in to continue to Dashboard.</p>
 								</div>
 							</Col>
 							<Col class="col-5 align-self-end">
@@ -175,8 +175,8 @@
 						<Link href="/auth/register" class="fw-medium text-primary">Signup now</Link>
 					</p>
 					<p>
-						© {new Date().getFullYear()} Skote. Crafted with
-						<i class="mdi mdi-heart text-danger" /> by Themesbrand
+						© {new Date().getFullYear()} Forever Artisans
+						<i class="mdi mdi-heart text-danger" /> 
 					</p>
 				</div>
 			</Col>

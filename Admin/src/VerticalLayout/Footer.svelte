@@ -8,11 +8,11 @@
     <Container fluid>
         <Row>
             <Col sm={6}>
-                {new Date().getFullYear()} © Skote.
+                {new Date().getFullYear()} © Forever Artsians.
             </Col>
             <Col sm={6}>
                 <div class="text-sm-end d-none d-sm-block">
-                    Design & Develop by Themesbrand
+                    Forever Artsians
                 </div>
             </Col>
         </Row>

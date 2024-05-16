@@ -57,22 +57,22 @@ const Navdata = [
   {
     "icon": "fas fa-ring",
     "label": "Rings",
-    "link": "/ecommerce/products"
+    "link": "/products/rings"
   },
   {
     "icon": "fas fa-user-friends",
     "label": "Users",
-    "link": "/contacts/list"
+    "link": "/users/list"
   },
   {
     "icon": "far fa-list-alt",
     "label": "Category",
-    "link": "/jobs/list"
+    "link": "/category/list"
   },
   {
     "icon": "bx bx-tag",
     "label": "Tags",
-    "link": "/jobs/list"
+    "link": "/tags"
   },
 
   // {

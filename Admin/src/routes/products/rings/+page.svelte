@@ -160,7 +160,7 @@
 				<Col xl="4" sm="6">
 					<Card>
 						<CardBody>		
-							<Link href="/ecommerce/product-detail">
+							<Link href="/products/product-detail">
 								<div class="product-img position-relative">
 									{#if product.isOffer}
 										<div class="avatar-sm product-ribbon">
