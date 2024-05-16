@@ -32,9 +32,9 @@
 	})
 
 	onMount(() => {
-		setTimeout(() => {
-			subscribemodal = true;
-		}, 1000);
+		// setTimeout(() => {
+		// 	subscribemodal = true;
+		// }, 1000);
 	})
 </script>
 

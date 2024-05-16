@@ -12,7 +12,7 @@
             </Col>
             <Col sm={6}>
                 <div class="text-sm-end d-none d-sm-block">
-                    Forever Artsians
+                    Designed & Developed with <i class="mdi mdi-heart text-danger" /> by Ocode Technologies
                 </div>
             </Col>
         </Row>

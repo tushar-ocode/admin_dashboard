@@ -4,7 +4,6 @@
 	import { browser } from '$app/environment';
 	import { goto } from '$app/navigation';
 	import VerticalLayout from '../VerticalLayout/Index.svelte';
-	// import HorizontalLayout from '../HorizontalLayout/Index.svelte';
 	import { addMessages, init, getLocaleFromNavigator } from 'svelte-i18n';
 	import en from '../lang/en.json';
 
@@ -15,28 +14,10 @@
 		initialLocale: getLocaleFromNavigator()
 	});
 
-	let layoutType = 'vertical';
-
-	onMount(() => {
-		if (!isAuthenticate()) {
-			goto('/auth/login');
-		}
-	});
-
-	function isAuthenticate() {
-		let user = browser && localStorage.authUser;
-		if (!user) {
-			return false;
-		} else {
-			return true;
-		}
-	}
-
-	let component = layoutType == 'vertical' ? VerticalLayout : VerticalLayout;
-
 	const publicRoutes = [
 		'/crypto/ico-landing',
 		'/auth/login',
+		'/auth/login/',
 		'/auth/login-2',
 		'/auth/register',
 		'/auth/register-2',
@@ -53,10 +34,26 @@
 		'/pages/maintenance',
 		'/pages/comingsoon',
 		'/pages/404',
-		'/pages/500'
+		'/pages/500',
 	];
 
 	$: isPublic = publicRoutes.includes($page.url.pathname);
+
+	onMount(() => {
+		if (!isAuthenticate() && !isPublic) {
+			goto('/auth/login');
+		}
+	});
+
+	function isAuthenticate() {
+		let user = browser && localStorage.authUser;
+		if (!user) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
 </script>
 
 <svelte:head>
@@ -69,10 +66,11 @@
 {#if isPublic}
 	<slot />
 {:else}
-	<svelte:component this={component}>
+	<svelte:component this={VerticalLayout}>
 		<slot />
 	</svelte:component>
 {/if}
+
 
 <style lang="scss">
 	@import './../assets/scss/bootstrap.scss';

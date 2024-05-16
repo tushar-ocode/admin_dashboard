@@ -19,7 +19,7 @@
 
 	import { goto } from '$app/navigation';
 
-	let username = 'admin@themesbrand.com';
+	let username = 'admin@forevercompanies.com';
 	let password = '123456';
 	let isOpen = false;
 	let msg = '';
@@ -30,7 +30,7 @@
 		try {
 			const response = await fetch('https://api-node.themesbrand.website/auth/signin', {
 				method: 'POST',
-				body: JSON.stringify({ email: username, password: password }),
+				body: JSON.stringify({ email: 'admin@themesbrand.com', password: password }),
 				headers: {
 					'Content-Type': 'application/json'
 				}
@@ -83,14 +83,14 @@
 							<Link href="/dashboard" class="auth-logo-light">
 								<div class="avatar-md profile-user-wid mb-4">
 									<span class="avatar-title rounded-circle bg-light">
-										<img src={logolight} alt="" class="rounded-circle" height="34" />
+										<img src={logolight} alt="" class="rounded-circle" height="60" />
 									</span>
 								</div>
 							</Link>
 							<Link href="/dashboard" class="auth-logo-dark">
 								<div class="avatar-md profile-user-wid mb-4">
 									<span class="avatar-title rounded-circle bg-light">
-										<img src={logo} alt="" class="rounded-circle" height="34" />
+										<img src={logo} alt="" class="rounded-circle" height="60" />
 									</span>
 								</div>
 							</Link>
@@ -138,7 +138,7 @@
 									>
 								</div>
 
-								<div class="mt-4 text-center">
+								<!-- <div class="mt-4 text-center">
 									<h5 class="font-size-14 mb-3">Sign in with</h5>
 
 									<ul class="list-inline">
@@ -158,7 +158,7 @@
 											</a>
 										</li>
 									</ul>
-								</div>
+								</div> -->
 
 								<div class="mt-4 text-center">
 									<Link href="/auth/recoverpw" class="text-muted"
@@ -170,10 +170,10 @@
 					</CardBody>
 				</Card>
 				<div class="mt-5 text-center">
-					<p>
+					<!-- <p>
 						Don&apos;t have an account ?
 						<Link href="/auth/register" class="fw-medium text-primary">Signup now</Link>
-					</p>
+					</p> -->
 					<p>
 						© {new Date().getFullYear()} Forever Artisans
 						<i class="mdi mdi-heart text-danger" /> 
