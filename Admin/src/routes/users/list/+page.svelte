@@ -72,6 +72,7 @@
 								<th scope="col">Name</th>
 								<th scope="col">Email</th>
 								<th scope="col">Permission</th>
+								<th scope="col">Role</th>
 								<th scope="col">Action</th>
 							</tr>
 						</thead>
@@ -115,6 +116,7 @@
 											{/if}
 										</div>
 									</td> -->
+									<td> {user.projects} </td>
 									<td> {user.projects} </td>
 									<td>
 										<ul class="list-inline font-size-20 contact-links mb-0">

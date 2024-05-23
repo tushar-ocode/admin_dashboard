@@ -214,7 +214,7 @@
 		<div class="modal-header border-bottom-0">
 			<button
 				type="button"
-				class="btn-close"
+				class="btn-close"	
 				on:click={togglesubscribemodal}
 			/>
 		</div>

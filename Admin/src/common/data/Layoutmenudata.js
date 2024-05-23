@@ -74,6 +74,16 @@ const Navdata = [
     "label": "Tags",
     "link": "/tags"
   },
+  {
+    "icon": "bx bx-tag",
+    "label": "Vendors",
+    "link": "/vendors/list"
+  },
+  {
+    "icon": "bx bx-tag",
+    "label": "Orders",
+    "link": "/orders/list"
+  },
 
   // {
   //   "icon": "bx bx-bitcoin",
