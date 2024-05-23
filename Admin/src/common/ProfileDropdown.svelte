@@ -29,7 +29,7 @@
 			><i class="bx bx-user font-size-16 align-middle me-1" />
 			<span>Profile</span>
 		</DropdownItem>
-		<DropdownItem href="#"
+		<!-- <DropdownItem href="#"
 			><i class="bx bx-wallet font-size-16 align-middle me-1" />
 			<span>My Wallet</span>
 		</DropdownItem>
@@ -41,7 +41,7 @@
 		<DropdownItem href="#">
 			<i class="bx bx-lock-open font-size-16 align-middle me-1" />
 			<span key="t-lock-screen">Lock screen</span>
-		</DropdownItem>
+		</DropdownItem> -->
 		<DropdownItem divider />
 		<DropdownItem href="#" >
 			<div on:click={logout}>
